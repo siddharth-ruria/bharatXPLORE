@@ -1,5 +1,9 @@
 // ""
+<<<<<<< Updated upstream
 // hg""
+=======
+//  
+>>>>>>> Stashed changes
 // ''
 
 document.addEventListener("DOMContentLoaded", function () {

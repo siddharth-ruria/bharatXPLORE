@@ -1,5 +1,5 @@
 // ""
-// hg
+// hg""
 // ''
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,7 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
         var pathName = state.getAttribute("name");
         alert("you clicked on " + pathName);
       });
-      
+
+      const originalColor = state.getAttribute("fill");
+
+      state.addEventListener("mouseenter", function () {
+        state.setAttribute("fill", "white");
+      });
+
+      state.addEventListener("mouseleave", function () {
+        this.setAttribute("fill", originalColor);
+      });
     });
   });
 });

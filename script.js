@@ -1,11 +1,3 @@
-// ""
-<<<<<<< Updated upstream
-// hg""
-=======
-//  
->>>>>>> Stashed changes
-// ''
-
 document.addEventListener("DOMContentLoaded", function () {
   var mapObject = document.getElementById("india-map");
   mapObject.addEventListener("load", function () {

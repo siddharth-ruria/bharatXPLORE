@@ -1,5 +1,12 @@
+// ""
+// hg
+// var map = L.map("india-map", {
+//   dragging: true,
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   var mapObject = document.getElementById("india-map");
+
   mapObject.addEventListener("load", function () {
     var svgDoc = mapObject.contentDocument;
 

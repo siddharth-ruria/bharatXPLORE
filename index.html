@@ -7,17 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ////////////////////////////////////////// NAVBAR ////////////////////////////////////////////// -->
+
     <nav class="navbar">
       <div class="container">
-        <h1 class="logo">Your Logo</h1>
+        <h1 id="logo">BharatXPLORE</h1>
+        <script>
+          document
+            .getElementById("logo")
+            .addEventListener("click", function () {
+              window.location.reload(true);
+            });
+
+          const logoText = document.getElementById("logo");
+          logoText.addEventListener("mouseover", function () {
+            this.style.cursor = "pointer";
+          });
+          logoText.addEventListener("mouseout", function () {
+            this.style.cursor = "default";
+          });
+        </script>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- ////////////////////////////////////////// NAVBAR ////////////////////////////////////////////// -->
 
     <div class="map-container">
       <object

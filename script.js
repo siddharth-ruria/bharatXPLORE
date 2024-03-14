@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
       state.addEventListener("mousemove", function (e) {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
-        popup.style.left = mouseX + 380 + "px";
-        popup.style.top = mouseY + 50 + "px";
+        popup.style.left = mouseX + 500 + "px";
+        popup.style.top = mouseY + 70 + "px";
       });
     });
   });

@@ -37,10 +37,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       state.addEventListener("mousemove", function (e) {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        popup.style.left = mouseX + 500 + "px";
-        popup.style.top = mouseY + 70 + "px";
+        // const mouseX = e.clientX;
+        // const mouseY = e.clientY;
+        // popup.style.left = mouseX + "px";
+        // popup.style.top = mouseY + "px";+
+
+        var mouseX = e.clientX - mapObject.getBoundingClientRect().left;
+        var mouseY = e.clientY - mapObject.getBoundingClientRect().top;
+        popup.style.left = mouseX + 1100 + "px";
+        popup.style.top = mouseY + 110 + "px";
       });
     });
   });
